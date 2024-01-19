@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=s, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Font Awesome CSS (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- xxxxxxxxxxx -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> <!-- Use jQuery 3.6.4 -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="icon" href="logo.png" type="image/x-icon">
+  <link rel="shortcut icon" style="width: 100px; height: 100px;" href="logo.png" type="image/x-icon">
+  <title>IT Maestro|State level IT Fest</title>
+  <style>
+    #cardContainer img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    .card {
+      width: 100px;
+      height: 290px;
+      margin-right: 10px;
+      background-color: #464646a4;
+      border: none;
+      border-radius: 10px;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .card:hover{
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+    }
+
+
+    #btn {
+      color: rgb(88, 88, 88);
+      background-color: black;
+      border-radius: 50%;
+    }
+
+    #outer {
+      margin: 0;
+      width: 100%;
+      height: fit-content;
+    }
+
+    #cardContainer {
+      margin: 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      .card {
+        width: 80px;
+        height: 200px;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+        }
+    }
+  </style>
+  </style>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+  body {
+    background-image: url();
+  }
+
+  nav {
+    background-color: rgb(255, 255, 255);
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0%;
+  }
+
+  img {
+    width: 100%;
+    height: 400px;
+  }
+
+  #carousal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 200px;
+    margin-top: 50px;
+  }
+
+  .disc {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* margin: 10px;
+        padding: 10px; */
+    /* background-color: aqua; */
+    border-color: blue;
+    color: white;
+  }
+
+  .RR {
+    color: white;
+    border-color: blue;
+    /* background-color: aqua; */
+    /* margin: 10px;
+        padding: 10px; */
+  }
+
+  #accordionExample {
+    box-shadow: 10px10px 15px gray;
+  }
+
+  section {
+    /* background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% ); */
+  }
+
+  .event-images {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: -25px -9px 15px -3px rgb(46, 45, 45);
+  }
+
+  .card-header {
+
+    padding: 30px;
+  }
+
+  .btn {
+    text-decoration: none;
+  }
+
+  .blind-c {
+    background-image: url(event-side.jpg);
+    /* text-shadow: 10PX 10PX 15PX rgb(8, 8, 8);
+    background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%); */
+    background-size: 100% 100%;
+    /* This property makes the background image cover the entire container without scaling */
+    background-position: center;
+    /* This property centers the background image */
+    background-repeat: no-repeat;
+    /* This property ensures that the background image is not repeated */
+    color: #fff;
+    padding: 48px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .event-disc {
+
+    word-wrap: break-word;
+    color: #6d6d6d;
+    margin-top: 10px;
+  }
+
+  .web-d {
+    background: linear-gradient(25deg, #f8ffff, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+
+  #headingOne {
+    background-image: url(event-side.jpg);
+    /* text-shadow: 10PX 10PX 15PX rgb(8, 8, 8);
+    background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%); */
+    background-size: 100% 100%;
+    /* This property makes the background image cover the entire container without scaling */
+    background-position: center;
+    /* This property centers the background image */
+    background-repeat: no-repeat;
+    /* This property ensures that the background image is not repeated */
+    color: white;
+  }
+
+  #headingTwo {
+    background-image: url(event-side.jpg);
+    /* text-shadow: 10PX 10PX 15PX rgb(8, 8, 8);
+    background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%); */
+    background-size: 100% 100%;
+    /* This property makes the background image cover the entire container without scaling */
+    background-position: center;
+    /* This property centers the background image */
+    background-repeat: no-repeat;
+  }
+
+  #headingThree {
+    background-image: url(event-side.jpg);
+    /* text-shadow: 10PX 10PX 15PX rgb(8, 8, 8);
+    background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%); */
+    background-size: 100% 100%;
+    /* This property makes the background image cover the entire container without scaling */
+    background-position: center;
+    /* This property centers the background image */
+    background-repeat: no-repeat;
+    /* This property ensures that the background image is not repeated */
+  }
+
+  .animate {
+    position: relative;
+    left: -1000%;
+    /* Initial position off-screen to the left */
+    opacity: 0;
+    /* Start with opacity set to 0 */
+    animation: slideIn 1s forwards;
+    /* Animation properties: name, duration, and fill-mode */
+    background-color: coral;
+    padding: 10px;
+    color: white;
+  }
+
+  @keyframes slideIn {
+    to {
+      left: 0;
+      /* Final position at 0% from the left */
+      opacity: 1;
+      /* Make the text fully visible */
+      background: linear-gradient(25deg, #00ffff, #000000);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 3em;
+      text-align: center;
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion-item {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .accordion-header {
+    background-image: url(event-side.jpg);
+    /* text-shadow: 10PX 10PX 15PX rgb(8, 8, 8);
+    background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%); */
+    background-size: 100% 100%;
+    /* This property makes the background image cover the entire container without scaling */
+    background-position: center;
+    /* This property centers the background image */
+    background-repeat: no-repeat;
+    /* This property ensures that the background image is not repeated */
+    color: #fff;
+    padding: 48px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .accordion-content {
+    padding: 10px;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 3s ease-out;
+    /* Adjust the duration and easing as needed */
+
+  }
+
+  .accordion-item.active .accordion-content {
+    max-height: 1000px;
+    /* Set a large enough value to accommodate your content */
+  }
+
+  @media screen and (max-width: 600px) {
+    .accordion {
+      max-width: 100%;
+      /* Full width on smaller screens */
+    }
+  }
+
+  .navbar {
+
+    
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: block;
+  }
+
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: #333;
+  }
+
+  .responsive-div {
+    max-width: 800px;
+    /* Set your preferred maximum width for the container */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 20px;
+
+  }
+
+  /* Styles for the heading */
+  .events {
+    font-size: 44px;
+    font-family: 'Roboto', sans-serif;
+    /* Replace 'Roboto' with your desired font */
+    color: #3498db;
+    /* Set the default text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Add a subtle text shadow */
+    border-bottom: 2px solid transparent;
+    /* Add a transparent border initially */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease, text-shadow 0.3s ease;
+    /* Add smooth transition */
+
+  }
+
+  .events:hover {
+    color: #e74c3c;
+    /* Change text color on hover */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    /* Enhance text shadow on hover */
+    border-bottom-color: #e74c3c;
+    /* Change border color on hover */
+  }
+
+  /* Media query for smaller screens (e.g., mobile) */
+  @media only screen and (max-width: 600px) {
+    .responsive-div {
+      padding: 10px;
+      /* Adjust padding for smaller screens */
+
+    }
+
+    .events {
+      font-size: 26px;
+      /* Set a smaller font size for mobile screens */
+      text-align: center;
+    }
+  }
+
+  /* xxxx */
+  .tabs-container {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+  }
+
+  .tab {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    color: white;
+    float: left;
+    width: 33.33%;
+    /* Equal width for each tab */
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #353535;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .tab:hover {
+    background-color: #525151;
+    transform: scale(1);
+    color: white;
+  }
+
+  .tab-content {
+    color: #c4bfbf;
+    display: none;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #2b3e5c;
+
+  }
+
+  #tab1-content {
+    display: block;
+  }
+
+  /* Add more styles for other tabs as needed */
+
+  /* Media query for smaller screens (e.g., mobile) */
+  @media only screen and (max-width: 600px) {
+    .tab {
+      width: 100%;
+      margin: 0%;
+    }
+  }
+
+  .s-text {
+    margin: 0;
+    /* Remove default margin */
+    text-align: center;
+    /* Center the image within the paragraph */
+  }
+
+  #schedule-img {
+    border-radius: 10px;
+    width: 100%;
+    /* Make the image full width */
+    height: 35rem;
+    /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its natural size */
+    display: block;
+    /* Remove extra space below the image */
+    margin: 0 auto;
+    /* Center the image horizontally */
+  }
+
+  #about {
+    background-image: url(cube.jpg);
+    background-size: 100% 100%;
+    /* This property makes the background image cover the entire container without scaling */
+    background-position: center;
+    /* This property centers the background image */
+    background-repeat: no-repeat;
+    /* This property ensures that the background image is not repeated */
+  }
+
+  #navbarSupportedContent ul {
+    margin: 0 auto;
+  }
+
+  #navbarSupportedContent ul li {
+    margin: 0.8rem;
+    padding-bottom: 1px;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  #navbarSupportedContent ul li:hover {
+    background-color: #151b6842;
+    border-radius: 0.2rem;
+  }
+
+  /* xx */
+  /* General table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+/* Header row styles */
+.table th {
+  background-color: #f2f2f2;
+}
+
+/* Cell styles */
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Responsive Styles for Small Screens */
+@media only screen and (max-width: 600px) {
+  /* Hide the header cells on small screens */
+  .table th {
+    display: none;
+  }
+
+  /* Display the table rows as blocks for better stacking on small screens */
+  .table tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  /* Style for individual cells on small screens */
+  .table td {
+    display: block;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+  /* Responsive Styles
+@media only screen and (max-width: 375px) {
+  th, td {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    /* padding: 6px; Adjust padding for smaller screens */
+  /* } */
+
+  /* table {
+    width: 100%;
+   */
+    /* overflow-x: auto; Enable horizontal scrolling */
+  /* }
+} */
+
+
+ /* Responsive Styles */
+/* @media only screen and (max-width: 490) {
+  th, td {
+    font-size: 7px;
+    padding: 3px;
+  } */
+
+  /* table {
+    width: 100%; */
+    
+    /* overflow-x: auto; Enable horizontal scrolling */
+  /* }
+} */ */
+
+  /* xxxxxxxxxx */
+  
+  
+  /* xxxxxxxxxx */
+
+  .info-tabs {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .info-tab {
+    border-radius: 8px;
+
+    margin-bottom: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .info-tab-header {
+    background-image: url(event-side.jpg);
+    /* text-shadow: 10PX 10PX 15PX rgb(8, 8, 8);
+          background-image: linear-gradient(111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%); */
+    background-size: 100% 100%;
+    /* This property makes the background image cover the entire container without scaling */
+    background-position: center;
+    /* This property centers the background image */
+    background-repeat: no-repeat;
+    /* This property ensures that the background image is not repeated */
+    color: #fff;
+    padding: 48px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .info-tab-content {
+    padding: 10px;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .info-tab.active .info-tab-content {
+    max-height: 1000px;
+  }
+
+  /* Responsive adjustments */
+  @media screen and (max-width: 600px) {
+    .info-tabs {
+      padding: 10px;
+    }
+  }
+
+  .event-disc {
+    color: rgb(230, 230, 230);
+  }
+
+  .linear-e-head {
+    background: linear-gradient(25deg, #d000fa, #0004ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.8em;
+    text-align: center;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 5px 5px 10px rgb(31, 30, 30);
+  }
+
+  /* venue */
+  .reach-out {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .venue {
+    width: 50%;
+    height: 450px;
+    background-color: rgba(3, 3, 51, 0.616);
+    padding: 20px;
+  }
+
+  iframe {
+    border-radius: 10px;
+
+  }
+
+  #map {
+    margin: 0;
+
+  }
+
+  .venue {
+    flex: 1;
+  }
+
+  #map {
+    flex: 1;
+  }
+
+  iframe {
+    width: 100%;
+    height: 27rem;
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 767px) {
+    .reach-out {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #map {
+      width: 100%;
+      padding: 10px;
+      height: fit-content;
+
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+    }
+
+    .venue {
+      width: 100%;
+      margin: 10px;
+      background-color: rgba(3, 3, 51, 0.616);
+    }
+  }
+
+  footer {
+    background-color: #4b4848;
+  }
+
+  /* navbar */
+  .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    /* Adjust the padding to your preference for spacing */
+    margin: 0%;
+    text-decoration: none;
+    /* Remove default underline for links */
+  }
+
+  .navbar-brand img {
+    /* Adjust the margin to create space between the logo and text */
+    max-height: 60px;
+    /* Adjust the max-height of the logo to your preference */
+    border-radius: 50%;
+    width: 100px;
+    mix-blend-mode: multiply;
+  }
+/* 
+  .navbar-brand #brand{
+    color: #333;
+    /* Adjust the color of the brand name */
+    /* font-size: 1.2em;
+    /* Adjust the font size of the brand name */
+    /* margin-left: 0%;
+    font-family: 'Helvetica', sans-serif;
+    height: 80px;
+    mix-blend-mode: darken; */ */
+
+  /* } */ */
+
+  /* tab3 */
+
+/* .tab3-container { */
+  /* width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-direction: row; /* This property is set to row */
+  /* justify-content: space-around;
+  margin: 20px;
+  padding: 20px; */
+  /* background-color: #000000; */ 
+/* } */
+  .box {
+    /* background-color: #000000; */
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    /* Set text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    /* Adjust the margin to your preference */
+    border-radius: 8px;
+    /* Add border radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+  }
+
+  #BOX1 section,
+  #BOX2 section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    height: fit-content;
+  }
+
+  #BOX2 {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color: rgba(0, 9, 128, 0.438);
+  }
+
+  .bx1:nth-child(1) {
+    background-color: red;
+    padding: 20PX;
+    border-radius: 5px;
+  }
+
+  .bx2 {
+    padding: 20PX;
+    border-radius: 5px;
+  }
+
+  #BOX3 {
+    background-color: rgba(0, 9, 128, 0.438);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+  }
+
+  #BOX1 {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    background-color: rgba(0, 9, 128, 0.438);
+  }
+
+  #BOX3 ul {
+    background-color: #3498db;
+    /* Set a background color for the boxes */
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  ul li {
+    margin: 10px;
+    list-style: none;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #BOX2 section #c-bx1 {
+    background-color: red;
+  }
+
+  #BOX2 section #c-bx2 {
+    background-color: green;
+  }
+
+  #BOX2 section #c-bx3 {
+    background-color: #3498db;
+    /* Set a background color for the boxes */
+  }
+
+  #c1-bx2 {
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .tab3-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box {
+    /* Add your box styling here */
+    margin: 10px;
+  }
+
+  h4, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 600px) {
+    .tab3-container {
+      flex-direction: column; /* Change to a column layout on smaller screens */
+    }
+
+    .box {
+      width: 100%; /* Make each box take up the full width on smaller screens */
+    }
+  }
+  /* countdown */
+  
+  .container-countdown {
+    height: fit-content;
+      text-align: center;
+      /* max-width: 600px; */
+      width: 100%;
+      padding: 20px;
+      background-color: #ffffff8a;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #333333;
+    }
+
+    #countdown {
+      font-size: 50px;
+      margin: 20px 0;
+      color: #555555;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 600px) {
+      .container {
+        max-width: 80%;
+      }
+    }
+    #brand{
+      margin-top: 10px;
+      width: 150px;
+      height: 80px;
+
+    }
+    #contact-us{
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 10px;
+    }
+   /* xxxxxxxxxxxxxxx */
+   .cordi-wrapper {
+      display: flex;
+      flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px;
+    }
+
+    .custom-card {
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      /* padding: 20px; */
+      text-align: center;
+      margin: 15px;
+      flex: 1; /* Allow cards to grow and shrink equally */
+      max-width: 300px;
+      height: 500px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Default drop shadow */
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .custom-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    .custom-card img {
+      width: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .custom-card h2 {
+      color: #333;
+      margin: 10px;
+    }
+
+    .custom-card p {
+      color: #555;
+      margin: 15px;
+    }
+
+    .social-icons a {
+      margin: 5px 10px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    /* Media Query for smaller screens */
+    @media (max-width: 768px) {
+      .cordi-wrapper {
+        flex-direction: column; /* Change to column for smaller screens */
+      }
+    }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body- fixed-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo">
+       <a href=""><img id="brand" onclick="toggleNavbar()" src="IT-MAESTRO-unscreen(1).gif" alt=""></a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#event">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tab2-s">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Co-ordinators">Co-ordinators</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.google.com/forms/d/1ASC1EHrP7BewlPl4EtLMp8gJUV-_bCUoXnHYXARHwOc/viewform">Register</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="vdeo">
+    <video onclick="toggleNavbar()" autoplay loop muted playsinline
+      src="WhatsApp Video 2024-01-08 at 8.05.19 PM.mp4"></video>
+  </div>
+  <main>
+    <div id="about" class="bg-dark text-secondary px-4 py-5 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">Join Us for an Unforgettable Experience!</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4">At IT Maestro XI, our mission is to harmonize the symphony of technology, creativity, and
+            knowledge. Tailored for colleges which includes BCA, BVoc and also for Higher Secondary School students across
+            the state, IT Maestro
+            is more than just an event, it's an experience, We cultivate a dynamic platform where innovation converges with
+            intellect, creating a vibrant atmosphere for learning and collaboration. Join us in celebrating the fusion
+            of technology and talent, as IT Maestro becomes the stage for the next wave of digital leaders. Unleash your
+            potential, amplify your skills, and be part of a technological crescendo at IT Maestro - "where brilliance
+            meets bytes."</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"><a href="https://docs.google.com/forms/d/1ASC1EHrP7BewlPl4EtLMp8gJUV-_bCUoXnHYXARHwOc/viewform">CLICK HERE TO REGISTER</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="tabs-container">
+    <div class="tab" id="tab1-s" onclick="showTab('tab1')">General Rules</div>
+    <div class="tab" id="tab2-s" onclick="showTab('tab2')">Schedule</div>
+    <div class="tab" id="tab3-s" onclick="showTab('tab3')">College and HSS event Bifurcation (*Important)</div>
+
+    <div id="tab1-content" class="tab-content">
+      <h1 align="center" style="color: #00000086;">General Rules</h1>
+      <ul>
+        <li>Registration Fees For Higher Secondary schools: 1500/- per Team.</li>
+        <li>Registration Fees For Colleges: 2000/- per Team.</li>
+        <li>The Event will be held at SES’S Sridora Caculo College of Commerce and Management Studies on 27th January 2024 from 8:30 AM to 6:00 PM.</li>
+        <li>Whichever team arrives at the event before 08:30am, will be GIVEN points for early bird.</li>
+        <li>To participate, it is mandatory to present your College/School ID Card AND deputation LETTER at the registration desk.</li>
+        <li>A minimum of 15 and a maximum of 20 Participants can participate, as a Team for all events.</li>
+        <li>Check the schedule and form the teams accordingly to avoid conflicts.</li>
+        <li>Registration must be completed by January 25, 2024. Confirmation will be provided after the payment process is successfully completed.</li>
+        <li>Organizers and judge’s decisions will be final and binding to all.</li>
+        <li>Points for Participants will be given based on participation and place secured.</li>
+        <li>GAMING Event is an Open event, (No Points will be counted for gaming events)</li>
+        <li>Gaming events will have Cash prizes.</li>
+        <li>Profanity of any type will result in THE disqualification of the Team.</li>
+        <li>Judgement for higher secondary school and college students will be different.</li>
+        <li>Participants must report to every event 10 minutes prior.</li>
+        <li>Extra team volunteers charge Rs. 100/- as an entry fee.</li>
+        <li>Refreshments only for participants and faculty in charge.</li>
+        <li>For more details regarding events, contact event CO-ORDINATORS.</li>
+      </ul>
+    </div>
+    <div id="tab2-content" class="tab-content">
+
+
+      <table id="Schedule" class="table">
+        <tr>
+          <th>TIME</th>
+          <th colspan="4">EVENTS</th>
+        </tr>
+        <tr>
+          <td>08:00-08:45</td>
+          <td colspan="2">EARLY BIRD REGISTRATION</td>
+          <td colspan="2">REFRESHMENT</td>
+        </tr>
+        <tr>
+          <td>08:45-10:00</td>
+          <td colspan="4">INAUGURATION</td>
+        </tr>
+        <tr>
+          <td>10:00-10:30</td>
+          <td colspan="2">ICE-BREAKER</td>
+          <td colspan="2">GAMING</td>
+        </tr>
+        <tr>
+          <td>10:45-11:45</td>
+          <td>BYTE BLIND</td>
+          <td>WEB FORGE</td>
+          <td>MIND MINGLE SHOWDOWN</td>
+          <td>DEBATE</td>
+        </tr>
+        <tr>
+          <td>12:00-1:00</td>
+          <td>KEYBOARD FRENZY</td>
+          <td>PC-MASTERPIECE MARATHON</td>
+          <td colspan="2">DECRYPT-DYNASTY DASH</td>
+        </tr>
+
+        <tr>
+          <td>01:30-02:30</td>
+          <td colspan="4">BEAT BREAKERS</td>
+        </tr>
+        <tr>
+          <td>02:30-03:30</td>
+          <td colspan="4">REMIX RIOT</td>
+        </tr>
+        <tr>
+          <td>03:30-04:30</td>
+          <td colspan="4">CATWALK COUTURE</td>
+        </tr>
+        <tr>
+          <td>04:30-05:30</td>
+          <td colspan="2">PRIZE DISTRIBUTION</td>
+          <td colspan="2">VOTE OF THANKS</td>
+        </tr>
+      </table>
+
+
+    </div>
+    <div id="tab3-content" class="tab-content">
+      <div class="tab3-container">
+        <div class="box" id="BOX1">
+          <section>
+            <div class="bx1">
+              <h4><a href="#pc-building">PC MASTERPIECE </a></h4>
+              <h4><a href="#debate">DEBATE</a> </h4>
+            </div>
+            <div class="bx1" id="c1-bx2">
+              <h4><a href="#dj-mix">REMIX RIOT</a> </h4>
+              <h4><a href="#web-design">WEBFORGE </a></h4>
+            </div>
+          </section>
+        </div>
+        <div class="box" id="BOX2">
+          <section>
+            <div class="bx2" id="c-bx1">HIGHER SECONDARY</div>
+            <div class="bx2" id="c-bx2">COLLEGE</div>
+            <div class="bx2" id="c-bx3">HSS + COLLEGE</div>
+          </section>
+        </div>
+        <div class="box" id="BOX3">
+          <ul>
+            <li><a href="#ice-breaker">ICE BREAKER</a></li>
+            <li><a href="#reel-making">REEL MAKING</a></li>
+            <li><a href="#quiz">MIND MINGLE SHOWDOWN</a></li>
+            <li><a href="#fashion-show">CATWALK COUTURE</a></li>
+            <li><a href="#treasure-hunt">DECRYPT-DYNASTY DASH</a></li>
+            <li><a href="#dance">BEAT BREAKERS</a></li>
+            <li><a href="#fast-typing">KEYBOARD FRENZY</a></li>
+            <li><a href="#blind-coding">BYTE BLIND</a></li>
+            <li><a href="#fifa">FIFA</a></li>
+            <li><a href="#cs-go">CS-GO</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="responsive-div" id="event">
+    <h1 class="events" style="text-align: center; width: 100%;">EVENTS</h1>
+
+  </div>
+
+  <section>
+    <div class="info-tabs">
+      <div class="info-tab" onclick="toggleInfoTab(1)">
+        <div class="info-tab-header" id="reel-making">
+          <h1 class="linear-e-head">REEL MAKING</h1>
+          <p class="event-disc" align="center"><b> “The Reel Making Competition is a creative showcase for participants to
+            exhibit their storytelling skills through a 90-second video.”</b>
+          </p>
+
+        </div>
+        <div class="info-tab-content">
+          <p>Theme: <strong>REEL VS REALITY</strong></p>
+          <strong>Rules</strong>
+          <Ul>
+            <li>One participant per team.</li>
+            <li>Submit your Reel on or before,</li>
+            <li>Upload your Reel on Google Drive and share the link before 3:00 pm on January 26th to the given email address, also WhatsApp the link.</li>
+            <li>Your Reel must be 90 seconds long in MP4 format.</li>
+            <li>Judges' decisions are final and binding.</li>
+            <li>Only Reels submitted through the designated platform will be accepted.</li>
+            <li>Late entries will be disqualified.</li>
+            <li><b>JUDGING CRITERIA</b></li>
+            <li style="list-style-type:none;">Creativity,Storytelling,Adherence to the
+              theme,Overall impact
+            </li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li> Ankul benkar : 8600996404 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=8600996404&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+              <li>Tejas Devsekar: 9579463398 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=9579463398&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+            Email:<a style="color: rgba(9, 54, 255, 0.678);"
+              href="mailto:itmaestro11@gmail.com">itmaestro11@gmail.com</a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="info-tab" id="ice-breaker" onclick="toggleInfoTab(2)">
+        <div class="info-tab-header">
+          <h1 class="linear-e-head" id="ice-b" align="center">ICE BREAKER</h1>
+          <p class="event-disc" id="ice-e-dsc" align="center"> <b>The Ice-Breaker Introduction Video is your chance to make
+            a memorable first impression! Craft a brief, engaging video that introduces yourself and showcases your
+            team.</b>
+          </p>
+
+        </div>
+        <div class="info-tab-content">
+          <strong>Rules</strong>
+          <Ul>
+            <li>Time Duration: 90 seconds video in MP4 format.</li>
+            <li>Participants taking part in IT MAESTRO XI should be performing in the introductory video.</li>
+            <li>Participants must introduce themselves and their role in IT MAESTRO XI 2024 without mentioning their college name and logo.</li>
+            <li>Video editing and special effects are allowed.</li>
+            <li>Videos should not contain any profanity or hurtful content towards other colleges.</li>
+            <li>Video must be submitted on 26th of January 2024 before 3:00 pm.</li>
+            <li>Upload your video on Google Drive and submit the drive link to the mentioned email ID and phone number addressed below.</li>
+            <li><b>JUDGING CRITERIA</b></li>
+            <li style="list-style-type:none;">Creativity,clarity of Introduction,Enthusiasm,Overall engagement.
+            </li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li> Rohit kattimani: 8552888134 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=8552888134&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+            Email:<a style="color: rgba(9, 54, 255, 0.678);"
+              href="mailto:itmaestro11@gmail.com">itmaestro11@gmail.com</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more sections as needed -->
+      <div class="info-tab" id="web-design" onclick="toggleInfoTab(3)">
+        <div class="info-tab-header">
+          <h1 class="linear-e-head" id="ice-b" align="center">WEB FORGE</h1>
+          <p class="event-disc" id="ice-e-dsc" align="center"><b>
+            "Calling all design enthusiasts to WebForge where creativity meets competition in a digital showdown! Gear
+            up for an immersive journey into the heart of web design excellence."</b>
+          </p>
+
+        </div>
+        <div class="info-tab-content">
+          <strong>Rules</strong>
+          <Ul>
+            <li>Each Team must consist a minimum of 1 and a maximum of 2 participants.</li>
+            <li>The event duration is 1 hour.</li>
+            <li>Teams should adhere to the alloted time.</li>
+            <li>HTML, CSS, and JavaScript are permitted; the use of other languages or frameworks are not allowed.</li>
+            <li>Internet access will not be available during the event.</li>
+            <li>Participants must create original designs. Plagiarism will result in immediate disqualification.</li>
+            <li>Files should be organized and well-commented for easy evaluation.</li>
+            <li>Teams will have a maximum of 5 minutes for presenting their web design.</li>
+            <li>Presentations should cover the design process, features, and functionalities of the website.</li>
+            <li>Topic will be given on the spot</li>
+            <li><b>JUDGING CRITERIA</b></li>
+            <li style="list-style-type:none;">Creativity,Functionality,Adherence to the theme,Overall design aesthetics.
+            </li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li> Manjunath shendge: 6360221659 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=6360221659&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+              <li>Ruchita jadhav : 9529047219 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=9529047219 &text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="info-tab" id="blind-coding" onclick="toggleInfoTab(4)">
+        <div class="info-tab-header">
+          <h1 class="linear-e-head" id="ice-b" align="center">BYTE BLIND</h1>
+          <p class="event-disc" id="ice-e-dsc" align="center"> <b> "Dive into the coding abyss as participants showcase their
+            programming mastery in
+            'Code in the Dark,' where screens are shrouded in darkness, but the brilliance of their code shines. A
+            challenging yet exhilarating event, pushing participants to rely solely on their coding instincts and
+            skill, crafting solutions that speak volumes in the absence of a visible screen."</b>
+          </p>
+
+        </div>
+        <div class="info-tab-content">
+          <strong>Rules</strong>
+          <Ul>
+            <li>Higher secondary participants will be using C programming language.</li>
+            <li>College participants will be using Java programming language.</li>
+            <li>2 participants per team.</li>
+            <li>The blind coding event will last for 1 hour.</li>
+            <li>The screen will be turned off throughout the event.</li>
+            <li>Any attempt to view or use the screen will result in immediate disqualification.</li>
+            <li>Participants are allowed to use only the specified IDE for their chosen programming language.</li>
+            <li><b>JUDGING CRITERIA</b></li>
+            <li style="list-style-type:none;">Code will be evaluated based on Correctness, Efficiency, and Adherence
+              to programming language
+            </li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li> Sakshi kolekar : 8799856965 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=8799856965&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+              <li>Sourabh kanolkar: 7083405130 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=7083405130&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="info-tab" id="fast-typing" onclick="toggleInfoTab(5)">
+        <div class="info-tab-header">
+          <h1 class="linear-e-head" id="ice-b" align="center">KEYBOARD FRENZY</h1>
+          <p class="event-disc" id="ice-e-dsc" align="center"><b> “Dive into the thrilling world of typing with our Fast
+            Typing Event! Test your keyboard prowess. showcase your speed and precision. Get ready for a frenzy of
+            fingers and a flurry of characters in this ultimate typing showdown!”</b>
+          </p>
+
+        </div>
+        <div class="info-tab-content">
+          <strong>Rules</strong>
+          <Ul>
+            <li>Only 1 participant per team can participate.</li>
+            <li>The competition will consist of ONE round, which will be a basic typing test.</li>
+            <li>Participants will use devices and typing platforms provided by the event coordinators.</li>
+            <li>Use of any external devices during the event is prohibited.</li>
+            <li>Text phrases will be selected by the organizers.</li>
+            <li>Participants should not request for specific texts or attempt to access the content in advance.</li>
+            <li>Each round will have a specific time limit instructed at the beginning of the round.</li>
+            <li><b>JUDGING CRITERIA</b></li>
+            <li style="list-style-type:none;">Both speed and accuracy will be considered in the evaluation of each
+              participant.
+            </li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li>Mandar mundaye : 8999294361 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=8999294361&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+              <li>Khushal patil : 7249214079 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=7249214079&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- xxxxx -->
+    </div>
+  </section>
+  <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="event_Images/img1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" >
+              <div id="carousal">
+                <div class="disc">
+                  <h1>WEB DESGNNG</h1>
+                  <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, nostrum consequatur sapiente aut nesciunt voluptatum error vel excepturi saepe in cupiditate animi ex veniam harum labore vitae, cum nam eveniet.</P>
+                </div>
+                <div class="RR">
+                    <h2>Rules and Regulation</h2>
+                    <ol>
+                      <li>Rul1</li>
+                      <li>Rul1</li>
+                      <li>Rul1</li>
+                      <li>Rul1</li>
+                      <li>Rul1</li>
+                      <li>Rul1</li>
+                    </ol>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="event_Images/img1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="event_Images/img1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+
+  <!-- </div> -->
+
+  <!-- <section>
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="btn btn-link card-header " id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <h1 class="linear-e-head">WEB FORGE</h1>
+              <p class="event-disc">The Web Design Challenge is an exciting competition that invites creative minds to
+                showcase their skills in web development and design. Participants will have the opportunity to
+                demonstrate their proficiency in creating visually appealing, user-friendly, and innovative websites.
+              </p>
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <h3>Rules </h3>
+            <ul>
+              <li>Each Team must consist of a minimum of 1 and maximum 2 Participants.</li>
+              <li>The event duration is 1 hour, including setup and presentation time.</li>
+              <li>Teams should adhere to the allocated time for fairness and efficiency.
+              </li>
+              <li>Participants are allowed to use VS code IDE
+              </li>
+              <li>Only HTML, CSS, and JavaScript are permitted; the use of other languages or frameworks is not allowed.
+              </li>
+              <li>Teams will have a maximum of 5 minutes for presenting their web design</li>
+              <li>Presentations should cover the design process, features, and functionalities of the website.</li>
+              <li><b>JUDGNG CRTERIA</b></li>
+              <li style="list-style-type:none;">The website will be evaluated based on creativity, functionality,
+                adherence to the theme, and overall design aesthetics.</li>
+            </ul>
+            <div class="coordnators">
+              <p><b>Event Coordnators</b></p>
+              <p>Manjunath Shendge : 6360221659 <br>Ruchita Jadhav : 9529047219</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              <h1 class="linear-e-head">BYTE BLND</h1>
+              <p class="event-disc">"Dive into the coding abyss as participants showcase their programming mastery in
+                'Code in the Dark,' where screens are shrouded in darkness, but the brilliance of their code shines. A
+                challenging yet exhilarating event, pushing participants to rely solely on their coding instincts and
+                skill, crafting solutions that speak volumes in the absence of a visible screen."
+              </p>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <ul>
+              <li>Higher secondary participants must use the C programming language.</li>
+              <li>College participants can choose between Java or Python.</li>
+              <li>The screen will be turned off throughout the event to ensure fair play.</li>
+              <li>Any attempt to view or use the screen will result in immediate disqualification.</li>
+              <li>Participants are allowed to use only the specified IDE for their chosen programming language.</li>
+              <li>The blind coding event will last for 1 hour</li>
+              <li><b>JUDGNG CRTERIA</b></li>
+              <li style="list-style-type:none;">Code will be evaluated based on correctness, efficiency, and adherence
+                to programming language
+              </li>
+            </ul>
+            <div class="coordnators">
+              <p><b>Event Coordnators</b></p>
+              <p>SAKSHI KOLEKAR : 8799856965 <br>
+                SOURABH KANOLKAR:7083405130</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              <h1 class="linear-e-head">KEYBOARD FRENZY</h1>
+              <p class="event-disc">Dive into the thrilling world of typing with our Fast Typing Event! Test your
+                keyboard prowess in two exciting rounds — a normal typing test and a blind typing challenge. Unleash
+                your typing skills, race against the keys, and showcase your speed and precision. Get ready for a frenzy
+                of fingers and a flurry of characters in this ultimate typing showdown!”</p>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <Ul>
+              <li>The competition will consist of two rounds The 1st round will be a normal typing test. 2nd round will
+                be a blind typing test </li>
+              <li>Participants will use devices and typing platforms provided by the event coordinators.</li>
+              <li>Any external devices, including keyboards, are not allowed.</li>
+              <li>Text for both rounds will be selected by the organizers.</li>
+              <li>Participants should not request specific texts or attempt to access the content in advance. </li>
+              <li>Each round will have a specific time limit communicated at the beginning of the round.
+              </li>
+              <li>For the blind typing test, participants will not be able to see the text being typed.</li>
+              <li>This round assesses participants' touch typing skills without visual reference.</li>
+              <li><b>JUDGNG CRTERIA</b></li>
+              <li style="list-style-type:none;">Both speed and accuracy will be considered in the evaluation of each
+                participant.
+              </li>
+            </ul>
+            <div class="coordnators">
+              <p><b>Event Coordnators</b></p>
+              <p>mandar mundaye : 8999294361 <br>
+                khushal patil : 7249214079</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  </div>
+
+
+  <div class="accordion">
+    <div class="accordion-item" id="quiz" onclick="toggleAccordion(1)">
+      <div class="accordion-header">
+        <h1 class="linear-e-head">MIND MINGLE SHOWDOWN</h1>
+        <p class="event-disc"><b> "Stimulate your intellects in the Quiz Competition! dive into a challenging contest that
+          tests your knowledge and quick thinking."</b></p>
+      </div>
+      <div class="accordion-content">
+        <div class="card-body">
+          <strong>Rules </strong>
+          <Ul>
+            <li>Each team must consist of 2 participants.</li>
+            <li>The quiz will consist of two rounds: General Round and Surprise Round.</li>
+            <li>Details for each round, including format and scoring, will be communicated with the teams before the event starts.</li>
+            <li>The judges' decision will be final and binding.</li>
+            <li>Any form of cheating or communication between teams may result in disqualification.</li>
+            <li>The use of electronic devices during the quiz is strictly prohibited. Violation may result in point deductions or disqualification.</li>
+            <li><b>JUDGING CRITERIA</b></li>
+            <li style="list-style-type:none;">Accuracy,Effective teamwork,Response
+              time,Overall engagement across the three rounds.</li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li>Sonali singh : 9370739159 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=9370739159&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+              <li>Ruchita jadhav : 9529047219 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=9529047219 &text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" id="dj-mix" onclick="toggleAccordion(2)">
+      <div class="accordion-header">
+        <h1 class="linear-e-head">REMIX RIOT</h1>
+        <p class="event-disc"> <b>“Dive into the dynamic world of Beats, an electrifying DJ MIX event that invites participants to explore the art of rhythmic alchemy. Unleash your creativity as you blend beats, fuse genres, and craft entirely new soundscapes. In this musical crucible, participants forge innovative compositions, seamlessly merging diverse tracks into harmonious symphonies.”
+        </b>
+        </p>
+      </div>
+      <div class="accordion-content">
+        <div class="card-body">
+          <strong>Rules </strong>
+          <Ul>
+            <li>Limited to only 1 participant.</li>
+            <li>The total performance time for each team is 8 minutes, including setup.</li>
+            <li>Participants are required to bring their own laptop with 'Virtual DJ' software installed.</li>
+            <li>Any additional equipment or special technical requirements must be communicated to the event in charge in advance.</li>
+            <li><b>JUDGING CRITERIA</b></li>
+            <li style="list-style-type: none;">Originality and Creativity in the Composition,Seamless transitions and
+              Mixing techniques,Audience engagement and Response,Technical skills and Equipment handling.</li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li>Mandar mundaye : 8999294361 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=8999294361&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+              <li> Manjunath shendge: 6360221659 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=6360221659&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item" id="treasure-hunt" onclick="toggleAccordion(3)">
+      <div class="accordion-header">
+        <h1 class="linear-e-head">DECRYPT-DYNASTY DASH</h1>
+        <p class="event-disc"> <b>Embark on a quest where cryptic clues weave a tapestry OF EXCITEMENT. Navigate through
+          enigmatic landscapes, unlocking the secrets of a hidden treasure. Will you decode the whispers of the past and
+          unveil the coveted prize? The adventure awaits!”</b>
+        </p>
+      </div>
+      <div class="accordion-content">
+        <div class="card-body">
+          <strong>Rules</strong>
+          <Ul>
+            <li>Each team must consist of 3 participants. (At least 1 girl participant compulsory)</li>
+            <li>Participants will be provided with a map or a designated search area. The start and end time of the event will be instructed clearly during the briefing.</li>
+            <li>The use of electronic devices or external help will be prohibited.</li>
+            <li>Participants are expected to exhibit fair play and good sportsmanship. Any behavior causing harm to others or damage to property is strictly prohibited.</li>
+            <li>Decisions taken by the event heads and coordinators will be final and binding.</li>
+            <li>Rule violations, misbehaving with any coordinators or volunteers will lead to direct disqualification.</li>
+            <li>Remaining details will be communicated during the event.</li>
+            <li><b>JUDGING CRITERIA</b></li>
+            <li style="list-style-type: none;">Efficient completion of clues,Accurate discovery of
+              treasures,Teamwork,Sportsmanship,Adherence to rules </li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li> Rohit kattimani: 8552888134 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=8552888134&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+              <li>Neha naik : 8408085462 &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=8408085462 &text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" id="pc-building" onclick="toggleAccordion(4)">
+      <div class="accordion-header">
+        <h1 class="linear-e-head">PC MASTERPIECE</h1>
+        <p class="event-disc"> <b>“Get ready to showcase your technical prowess and innovation in the PC Building
+          Competition!”</b>
+        </p>
+      </div>
+      <div class="accordion-content">
+        <div class="card-body">
+          <strong>Rules</strong>
+          <Ul>
+            <li>Each team must consist a minimum of 1 and a maximum of 2 participants.</li>
+            <li>Participants will have a predetermined budget to build their PCs.</li>
+            <li>The budget must cover all the components that are required for a functional PC.</li>
+            <li>Participants must complete their PC builds within the allotted time.</li>
+            <li>Teams will have a maximum of 5 minutes for explaining their chosen components.</li>
+            <li>Any attempts to exceed the budget will result in disqualification.</li>
+            <li>The decision of the judges will be final and binding.</li>
+            <li><b>JUDGING CRITERIA</b></li>
+            <li style="list-style-type: none;">The coherence of their component choices,Adherence to the given
+              budget,Technical proficiency in PC assembly,the Clarity,Effectiveness of their presentation </li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li>Somesh sawant: 9370655832&nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=9370655832&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" id="debate" onclick="toggleAccordion(5)">
+      <div class="accordion-header">
+        <h1 class="linear-e-head">DEBATE</h1>
+        <p class="event-disc"> <b>A debate is an organized argument or contest of ideas where participants discuss a topic
+          from opposing sides. It involves a formal and often public discussion, presenting persuasive arguments from
+          different perspectives. The purpose is to reach conclusions or convince others of a particular viewpoint.
+          Debates foster critical thinking and intellectual discourse.</b>
+        </p>
+      </div>
+      <div class="accordion-content">
+        <div class="card-body">
+          <h4>TOPICS:</h4>
+          <ul>
+            <li>Should  use of plastic items be banned?</li>
+
+            <li>Should 'Hindi' be an Indian National language?</li>
+
+            <li>Are electric vehicles eco-friendly or harmful?</li>
+
+            <li>Should obesity be labeled a disease?</li>
+
+            <li>Has social media improved or diminished human communication?</li>
+          </ul>
+          <strong>Rules</strong>
+          <Ul>
+            <li>One participant per team.</li>
+
+            <li>Participants must prepare arguments for both the 'for' and 'against' sides of the topics assigned.</li>
+
+            <li>A draw on the day will decide the topic of the debate.</li>
+
+            <li>There will be two rounds:
+              <ul>
+                <li>Round 1: Participants will argue 'for' or 'against' the topic. Participants with the most valid
+                  arguments will move to round 2.</li>
+
+                <li>Round 2: Participants will again argue 'for' or 'against' the topic. The participant with the most
+                  valid argument wins.</li>
+              </ul>
+            </li>
+
+            <li>Keep in mind: No use of profanity is allowed.</li>
+            <li><b>JUDGING CRITERIA</b></li>
+            <li style="list-style-type: none;">Clarity and logical argumentation,Use of evidence and examples,Rebuttal
+              of opponent's points,Speaking skills and persuasiveness </li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li>Dean mendonca : 8698629393&nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=8698629393&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+              <li>Akanksha maurya : 8806703930&nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=8806703930&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" id="fashion-show" onclick="toggleAccordion(6)">
+      <div class="accordion-header">
+        <h1 class="linear-e-head">CATWALK COUTURE</h1>
+        <p class="event-disc"> <b>“Step into the spotlight as our runway transforms into a canvas for sartorial expression.
+          The fashion show unfolds with a choreography of elegance, where each ensemble tells a story of innovation and
+          flair, exuding bold attitude and confidence.”</b>
+        </p>
+
+      </div>
+      <div class="accordion-content">
+        <div class="card-body">
+          <p>Theme: <strong>NETFLIX</strong></p>
+          <strong>Rules</strong>
+          <Ul>
+            <li>Each team must consist of  5  participants.</li>
+            <li>time Limit: 7 minutes including setup.</li>
+           <li> Background music should be brought in Mp3 format on a pen drive and must be     submitted to the event coordinators  during the time of registration in the morning  .</li>
+            <li><b>JUDGING CRITERIA</b></li>
+            <li style="list-style-type: none;">Costume, Walking, Theme, Attitude</li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li>kanya katkar :8668273308&nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=8668273308&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+              <li>Monica fernandes : 7057763529&nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=7057763529&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" id="dance" onclick="toggleAccordion(7)">
+      <div class="accordion-header">
+        <h1 class="linear-e-head">BEAT BREAKERS</h1>
+        <p class="event-disc"> <b>“An electrifying showcase of raw creativity and rhythmic expression, freestyle dance
+          competition invites dancers to break free from conventional moves and embrace the art of spontaneous
+          movement.“</b>
+        </p>
+
+      </div>
+      <div class="accordion-content">
+        <div class="card-body">
+          <p>Theme: <strong>OPEN</strong></p>
+          <strong>Rules</strong>
+          <Ul>
+            <li>Time limit: 3-5 minutes.</li>
+            <li>A team should consist of 3-5 members.</li>
+            <li>Usage of props and production materials is allowed. These have to be brought by the teams themselves,
+              but the organizers hold the discretion of allowing it on stage.</li>
+            <li>Teams must submit their music in the morning during the registration time.</li>
+            <li>Kindly arrive at the venue 15 minutes before the event begins to verify your song submission.</li>
+            <li>Spot registration and late entries will not be entertained.</li>
+            <li><b>JUDGING CRITERIA</b></li>
+            <li style="list-style-type: none;">Synchronization, Choreography, Expressions, Energy, Overall Impact,
+              Costume, Innovation, Presentation</li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li>Sahana naik : 9011578429 
+                &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=9011578429&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+              <li>Rishika sharma : 9011882667&nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=9011882667&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" id="fifa" onclick="toggleAccordion(8)">
+      <div class="accordion-header">
+        <h1 class="linear-e-head">FIFA</h1>
+        <p class="event-disc"> <b>“want to showcase your crazy FIFA skills?
+          do you have what it takes for a competitive one on one?
+          join in to fifa 23 and compete wiith your favourite football clubs!”</b>
+        </p>
+
+      </div>
+      <div class="accordion-content">
+        <div class="card-body">
+             <strong>Rules</strong>
+          <Ul>
+            <li>Teams per HSS/College: 1</li>
+            <li>Participants per Team: 1</li>
+            <li>Entry Fee per Team: 200/-</li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li>Sahil usapkar : 7066130357 
+                &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=7066130357&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+              <li>Akshay kubal : 8668967947&nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=8668967947&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item" id="cs-go" onclick="toggleAccordion(9)">
+      <div class="accordion-header">
+        <h1 class="linear-e-head">CS-GO</h1>
+        <p class="event-disc"> <b>Hey gamers!!
+          welcome to the ultimate 5v5 fps arena
+          accept the challenge and showcase your talent</b>
+        </p>
+
+      </div>
+      <div class="accordion-content">
+        <div class="card-body">
+          <strong>Rules</strong>
+          <Ul>
+            <li>Teams per HSS/College: 1</li>
+            <li>Participants per Team: 3-5</li>
+            <li>Entry Fee per Team: 250/-</li>
+            <li>Participants can bring their own gear.</li>
+          </ul>
+          <div class="coordnators">
+            <p><b>Event Co-Ordinators</b></p>
+            <ul>
+              <li>Sahil usapkar : 7066130357 
+                &nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=7066130357&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+              <li>Akshay kubal : 8668967947&nbsp;<a style="color: rgba(0, 175, 58, 0.753);"
+                  href="whatsapp://send?phone=8668967947&text=Hello%20there!"><i class="fab fa-whatsapp"></i> </a></li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more sections as needed -->
+
+  </div>
+  <!-- xxxxxxx -->
+
+
+
+  <div class="responsive-div" id="Co-ordinators">
+    <h1 class="events">CO-ORDINATORS</h1>
+
+  </div>
+
+  <section class="cordi-wrapper coordinator-cards-contact">
+    <div class="custom-card">
+      <img src="Prutha-Kalangutkar.jpg" style="height: 300px;" alt="Card Image">
+      <h2>PRUTHA KALANGUTKAR</h2>
+      <p>BCA CO-ORDINATOR</p>
+      <div class="social-icons">
+        <a style="color: #0922ff;" href="tel:+919923655761"><i class="fa fa-phone"></i></a>
+        <a style="color: rgb(0, 99, 21)" href="whatsapp://send?phone=9923655761&text=Hello%20there!"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  
+    <div class="custom-card">
+      <img src="sonia1.jpeg" style="height: 300px;" alt="Card Image">
+      <h2>SONIA GOVEKAR</h2>
+      <p>FACULTY EVENT CO-ORDINATOR</p>
+      <div class="social-icons">
+        <a style="color: #0922ff;" href="tel:+919049559048"><i class="fa fa-phone"></i></a>
+        <a style="color: rgb(0, 99, 21)" href="whatsapp://send?phone=9049559048&text=Hello%20there!"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  
+    <div class="custom-card">
+      <img src="rohit.jpeg" style="height: 300px;" alt="Card Image">
+      <div class="cus-card-txt">
+        <h2>ROHIT KATTIMANI</h2>
+        <p>STUDENT EVENT CO-ORDINATOR</p>
+      </div>
+      <div class="social-icons">
+        <a style="color: #0922ff;" href="tel:+918552888134"><i class="fa fa-phone"></i></a>
+        <a style="color: rgb(0, 99, 21)" href="whatsapp://send?phone=8552888134&text=Hello%20there!"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- venue -->
+  <section class="reach-out">
+    <div class="venue" id="contact-us">
+      <h3>CONTACT US</h3>
+      <div class="mail" style="margin-bottom: 10px;">
+        <a style="color: #008cff; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;" href="mailto:itmaestro11@gmail.com">
+          <i style="color: rgb(255, 255, 255); font-size: 20px; " class="fas fa-envelope"></i> itmaestro11@gmail.com
+        </a>
+    </div>
+    <div class="instaid">
+      <img style="width: 300px; height: 300px; border-radius: 10px;" src="insta.jpeg" alt="">
+    </div>
+    </div>
+    <div id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.9299864216023!2d73.8025340741696!3d15.595389151950611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfeb01c0000001%3A0xc05e41f9e73f6594!2sSridora%20Caculo%20College%20of%20Commerce%20%26%20Management%20Studies!5e0!3m2!1sen!2sin!4v1705416180027!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <div class="responsive-div" id="sponsor">
+    <h1 class="events">SPONSORS</h1>
+
+  </div>
+  <section id="outer">
+    <div class="slick-carousel" id="cardContainer">
+      <div class="card" style="display: flex; justify-content: center;align-items: center; font-size: 40px; color:rgb(0, 60, 255) ; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >LAND MARK REALESTATE</div>
+      <div class="card"><img src="download.jpg" alt=""></div>
+      <div class="card"><img src="Michael-Lobo-Goa.jpg" alt=""></div>
+      <div class="card"><img src="ga11.jpeg" alt=""></div>
+      <div class="card" style="display: flex; justify-content: center;align-items: center; font-size: 40px; color:rgb(0, 60, 255) ; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" > PROMOD SANGODKAR</div>
+      <div class="card" style="display: flex; justify-content: center;align-items: center; font-size: 40px; color:rgb(0, 60, 255) ; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >SURAJ MADKAIKAR</div>
+      <div class="card" style="display: flex; justify-content: center;align-items: center; font-size: 40px; color:rgb(0, 60, 255) ; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >MAHENDRA PUROHIT</div>
+      <div class="card" style="display: flex; justify-content: center;align-items: center; font-size: 40px; color:rgb(0, 60, 255) ; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >ALTAF TRADERS</div>
+      <div class="card" style="display: flex; justify-content: center;align-items: center; font-size: 40px; color:rgb(0, 60, 255) ; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >PETKAR ENTEPRISES</div>
+      <div class="card" style="display: flex; justify-content: center;align-items: center; font-size: 40px; color:rgb(0, 60, 255) ; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >NASNODKAR</div>
+      <!-- Add more cards as needed -->
+    </div>
+    <div class="container-countdown">
+      <h1>Hurry up..!</h1>
+      <p id="countdown"></p>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+       
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/itmaestro24?igsh=YXFwZzd0MGxwZWp5&utm_source=qr"
+          role="button"><i class="fab fa-instagram"></i></a>
+
+
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(179, 179, 179, 0.486); color: #4b4848;">
+      © 2024 Copyright:
+      <a class="text-body" href="https://caculocollege.ac.in/">SES's Sridora caculo college of commerce and management
+        studies</a>&nbsp;|&nbsp;All right reserved.
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <script type="text/javascript">
+    $.noConflict(); // Revert $ back to other library
+    jQuery(document).ready(function ($) {
+      $('#cardContainer').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        prevArrow: '<button type="button" class="slick-prev" id="btn">Previous</button>',
+        nextArrow: '<button type="button" class="slick-next" id="btn">Next</button>',
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+    // xxxxxxxxxxx
+    var targetElement1 = document.querySelector('.blind-c');
+    var targetElement2 = document.querySelector('.web-d');
+    var targetElement3 = document.querySelector('.fast-t');
+    //  / Add a scroll event listener
+    window.addEventListener('scroll', function () {
+      // Get the current scroll position
+      var scrollPosition = window.scrollY || window.pageYOffset;
+
+      // Check if the scroll position is greater than 200 pixels
+      if (scrollPosition > 400) {
+        // If true, add the 'animate' class to the target element
+        targetElement1.classList.add('animate');
+      } else {
+        // If false, remove the 'animate' class from the target element
+        targetElement1.classList.remove('animate');
+      }
+      if (scrollPosition > 800) {
+        targetElement2.classList.add('animate');
+      } else {
+        targetElement2.classList.remove('animate');
+      }
+      if (scrollPosition > 1200) {
+        targetElement3.classList.add('animate');
+      } else {
+        targetElement3.classList.remove('animate');
+      }
+    });
+    function toggleAccordion(index) {
+      var content = document.querySelectorAll('.accordion-content');
+      content.forEach(function (item, i) {
+        if (i + 1 === index) {
+          item.style.display = item.style.display === 'none' ? 'block' : 'none';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      var activeItem = document.querySelector('.accordion-item.active');
+      if (activeItem) {
+        activeItem.classList.remove('active');
+      }
+
+      var currentAccordionItem = document.querySelector('.accordion-item:nth-child(' + index + ')');
+      if (currentAccordionItem) {
+        currentAccordionItem.classList.add('active');
+      }
+    }
+    window.addEventListener('scroll', function () {
+      var targetElementnav = document.getElementById('navbar');
+      var targetElementcon = document.getElementById('event');
+      // Get the current scroll position
+      var scrollPosition = window.scrollY || window.pageYOffset;
+
+      if (scrollPosition > 100) {
+        document.getElementById('navbar').style.display = "block"
+      } else {
+        document.getElementById('navbar').style.display = "none"
+      }
+      if (scrollPosition > 400) {
+        targetElementcon.classList.add('animate');
+      } else {
+        targetElementcon.classList.remove('animate');
+      }
+    });
+    function showTab(tabId) {
+      // Hide all tab contents
+      var tabContents = document.getElementsByClassName('tab-content');
+      for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = 'none';
+      }
+
+      // Show the selected tab content
+      document.getElementById(tabId + '-content').style.display = 'block';
+    }
+    // xxxxxxxxxx
+    function toggleInfoTab(index) {
+      var content = document.querySelectorAll('.info-tab-content');
+      content.forEach(function (item, i) {
+        if (i + 1 === index) {
+          item.style.display = item.style.display === 'none' ? 'block' : 'none';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      var activeItem = document.querySelector('.info-tab.active');
+      if (activeItem) {
+        activeItem.classList.remove('active');
+      }
+
+      var currentInfoTab = document.querySelector('.info-tab:nth-child(' + index + ')');
+      if (currentInfoTab) {
+        currentInfoTab.classList.add('active');
+      }
+    }
+
+    // Set the date for the event (January 27, 2024)
+    var countDownDate = new Date("Jan 27, 2024 00:00:00").getTime();
+
+    // Update the countdown every 1 second
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+
+      // Calculate days, hours, minutes, and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the countdown
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      // If the countdown is over, display a message
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
